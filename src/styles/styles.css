@@ -51,9 +51,16 @@ button {
     top: 3.8rem;
 }
 
+button:disabled {
+    background-color: gray;
+}
+button:disabled:hover {
+    box-shadow: none;
+}
+
 button:hover {
     cursor: pointer;
-    box-shadow: 0 0 0 1rem hsl(150, 100%, 66%, .5);
+    box-shadow: hsl(150deg 100% 66%) 0px 0px 36px;
 }
 
 footer {
